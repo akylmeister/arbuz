@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nsx-C0-bGx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Выберите арбуз-->
+        <scene sceneID="EvM-jk-xeO">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="tja-9C-QRm" customClass="HomeViewController" customModule="Arbuz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Snt-dF-9zB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3zJ-GC-0Cm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Zq-4o-nN3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zq-4o-nN3" firstAttribute="trailing" secondItem="3zJ-GC-0Cm" secondAttribute="trailing" id="FIX-Hu-TCr"/>
+                            <constraint firstItem="3zJ-GC-0Cm" firstAttribute="top" secondItem="3Zq-4o-nN3" secondAttribute="top" id="LGB-ui-qW9"/>
+                            <constraint firstItem="3zJ-GC-0Cm" firstAttribute="bottom" secondItem="3Zq-4o-nN3" secondAttribute="bottom" id="MeO-GI-GYd"/>
+                            <constraint firstItem="3zJ-GC-0Cm" firstAttribute="leading" secondItem="3Zq-4o-nN3" secondAttribute="leading" id="mQi-ML-ZZs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Выберите арбуз" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="qxk-Qf-7y7">
+                        <barButtonItem key="rightBarButtonItem" title="Сохранить" id="cTr-vx-knz">
+                            <color key="tintColor" systemColor="systemGreenColor"/>
+                            <connections>
+                                <action selector="savePressed" destination="tja-9C-QRm" id="Ibg-1a-dj2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3zJ-GC-0Cm" id="J0B-Hv-DM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OrW-vb-tJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931.88405797101461" y="823.66071428571422"/>
+        </scene>
+        <!--Заказ-->
+        <scene sceneID="F0a-2E-LDE">
+            <objects>
+                <viewController storyboardIdentifier="OrderViewController" id="gVX-2F-GsP" customClass="OrderViewController" customModule="Arbuz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iMG-0F-oEh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UkD-tc-tMM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Заказ" id="k6T-mX-96U"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jx1-jQ-0qT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-920.28985507246387" y="823.66071428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="elh-lH-Tbm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MFK-eB-MQO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bmx-91-1Y6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXj-0h-OMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1828.985507246377" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZnE-xf-5mM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nsx-C0-bGx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T1J-Xc-XwC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gVX-2F-GsP" kind="relationship" relationship="rootViewController" id="Gz3-3b-vnc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X5o-TZ-uct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1830.4347826086957" y="823.66071428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PjT-Cu-WnW">
+            <objects>
+                <navigationController storyboardIdentifier="navBar" automaticallyAdjustsScrollViewInsets="NO" id="4ru-hk-j5M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mzZ-e8-WMb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tja-9C-QRm" kind="relationship" relationship="rootViewController" id="knk-6S-lbu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60Y-cH-guf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="823.66071428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
